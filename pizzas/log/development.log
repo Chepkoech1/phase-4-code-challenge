@@ -1,0 +1,24 @@
+Started GET "/restaurants" for 127.0.0.1 at 2023-03-21 11:39:17 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/restaurants"):
+  
+Started GET "/restaurants" for 127.0.0.1 at 2023-03-21 11:40:30 +0300
+Processing by RestaurantsController#index as */*
+Completed 500 Internal Server Error in 62ms (Allocations: 19718)
+
+
+  
+Zeitwerk::NameError (expected file /home/sandra/Development/projects/phase-4-code-challenges/phase-4-code-challenge/pizzas_app/app/models/restaurant.rb to define constant Restaurant, but didn't):
+  
+app/controllers/restaurants_controller.rb:5:in `index'
+Started GET "/restaurants" for 127.0.0.1 at 2023-03-21 11:41:43 +0300
+Processing by RestaurantsController#index as */*
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:6:in `index'
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 1.1ms | Allocations: 7116)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: restaurants):
+  
+app/controllers/restaurants_controller.rb:6:in `index'
