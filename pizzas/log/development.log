@@ -577,3 +577,53 @@ ActionController::RoutingError (uninitialized constant RestaurantPizzasControlle
 Did you mean?  RestaurantsPizzasController
                RestaurantsController):
   
+Started GET "/pizzas" for 127.0.0.1 at 2023-03-21 13:09:17 +0300
+Processing by PizzasController#index as */*
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas"[0m
+  ↳ app/controllers/pizzas_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 2284)
+
+
+Started GET "/restaurant_pizzas" for 127.0.0.1 at 2023-03-21 13:09:35 +0300
+  
+ActionController::RoutingError (uninitialized constant RestaurantPizzasController
+Did you mean?  RestaurantsPizzasController
+               RestaurantsController):
+  
+Started GET "/restaurant" for 127.0.0.1 at 2023-03-21 13:09:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/restaurant"):
+  
+Started GET "/restaurants" for 127.0.0.1 at 2023-03-21 13:09:50 +0300
+Processing by RestaurantsController#index as */*
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.4ms | Allocations: 2278)
+
+
+Started GET "/restaurants_pizzas" for ::1 at 2023-03-21 13:59:36 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/restaurants_pizzas"):
+  
+Started GET "/restaurants_pizzas" for ::1 at 2023-03-21 13:59:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/restaurants_pizzas"):
+  
+Started GET "/rails/info/routes?path=re" for ::1 at 2023-03-21 14:01:45 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"re"}
+Completed 200 OK in 16ms (Views: 0.3ms | Allocations: 4935)
+
+
+Started GET "/rails/info/routes?path=rend" for ::1 at 2023-03-21 14:01:46 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"rend"}
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 705)
+
+
+Started GET "/rails/info/routes?path=render" for ::1 at 2023-03-21 14:01:47 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"render"}
+Completed 200 OK in 8ms (Views: 2.8ms | Allocations: 704)
+
+
