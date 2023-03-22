@@ -16,7 +16,11 @@
 
 - Open in Visual Studio Code:
 
-    `code`  
+    `code .`  
+    
+# Deployment link:
+
+  - `https://code-challenge-4.onrender.com`
 
 # Authors
 
